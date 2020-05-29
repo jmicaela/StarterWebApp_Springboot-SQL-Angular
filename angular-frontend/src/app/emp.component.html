@@ -1,0 +1,16 @@
+<h2>Employee List</h2>
+<ul class="employees">
+  <li *ngFor="let e of employees"
+    [class.selected]="e === targetEmployee">
+    <span src="/assets/img/bootstrap.svg" class="badge">{{e.id}}</span> {{e.firstname}} {{e.lastname}}
+  </li>
+</ul>
+
+<div *ngIf="selectedEmployee">
+
+  <h2>{{targetEmployee.firstname | uppercase}} Details</h2>
+  <div><span>id: </span>{{e.id}}</div>
+  <div><span>name: </span>{{e.firstname}} {{e.lastname}}</div>
+  <div><span>email: </span>{{e.email}}</div>
+  
+</div>

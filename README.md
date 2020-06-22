@@ -1,6 +1,9 @@
-# API navigation
+Exercise creating a REST API with SpringBoot and Angular frontend
 
-## Testing the springboot API
+
+## API navigation
+
+### Testing the springboot API
 
 The app runs on port 5000. The api serves get requests for the list of employees and to search by first and last name.
 
